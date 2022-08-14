@@ -4,8 +4,8 @@ import './styles/index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 
-import { ThemeProvider } from '@material-ui/core'
-import { theme } from './Theme'
+import { ThemeProvider } from '@mui/material/styles'
+import { theme} from './Theme'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(

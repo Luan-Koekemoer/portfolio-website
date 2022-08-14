@@ -13,15 +13,10 @@ import Slide from '@mui/material/Slide'
 import IconButton from '@mui/material/IconButton'
 import Menu from '@mui/material/Menu'
 import MenuIcon from '@mui/icons-material/Menu'
-import Avatar from '@mui/material/Avatar'
-import Button from '@mui/material/Button'
 import MenuItem from '@mui/material/MenuItem'
 
-//Theme
-import { ThemeProvider } from '@material-ui/core'
-import {theme} from '../Theme'
-//CSS
-import '../styles/NavBar.css'
+import { StyledNavButton } from './custom_mui'
+import '../styles/navbar.css'
 
 interface Props {
   /**
@@ -50,8 +45,8 @@ function HideOnScroll(props: Props) {
 
 export default function NavBar(props: Props) {
   const pages = [
-    { name: 'Home', link: '' },
-    { name: 'About', link: '/about' },
+    { name: 'Home', link: '/' },
+    // { name: 'About', link: '/about' },
   ]
 
   const [anchorElNav, setAnchorElNav] = React.useState(null)
@@ -65,13 +60,11 @@ export default function NavBar(props: Props) {
   }
 
   return (
-     <React.Fragment>
-    {/* <ThemeProvider theme={theme}> */}
+    <React.Fragment>
       <CssBaseline />
       <HideOnScroll {...props}>
-        <ThemeProvider theme={theme}>
-        <AppBar className='app-bar' color='background'>
-          <Container maxWidth='xl'>
+        <AppBar>
+          <Container maxWidth='lg'>
             <Toolbar disableGutters>
               {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
               <Typography
@@ -153,32 +146,26 @@ export default function NavBar(props: Props) {
 
               <Box
                 sx={{
+                  pr: '1em',
                   flexGrow: 1,
+                  justifyContent: 'center',
                   display: { xs: 'none', md: 'flex' },
                 }}
               >
                 {pages.map((page) => (
-                  <Link to={page.link} key={page.name} className='text-link'>
-                    <Button
-                      onClick={handleCloseNavMenu}
-                      sx={{ my: 2, color: 'white', display: 'block' }}
-                    >
-                      {page.name}
-                    </Button>
-                  </Link>
+                  <StyledNavButton
+                    key={page.name}
+                    onClick={handleCloseNavMenu}
+                    href={page.link}
+                  >
+                    {page.name}
+                  </StyledNavButton>
                 ))}
-              </Box>
-              <Box sx={{ flexGrow: 0 }}>
-                <IconButton sx={{ p: 0 }}>
-                  <Avatar alt='Remy Sharp' src='/static/images/avatar/2.jpg' />
-                </IconButton>
               </Box>
             </Toolbar>
           </Container>
         </AppBar>
-        </ThemeProvider>
       </HideOnScroll>
-    {/* </ThemeProvider> */}
     </React.Fragment>
   )
 }
