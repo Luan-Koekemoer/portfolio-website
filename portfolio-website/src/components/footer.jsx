@@ -1,20 +1,15 @@
-import React from 'react'
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 
-export default function About() {
+export default function Footer(Props: props) {
   return (
-      <Box sx={{ bgcolor: 'bg.primary' }}>
+    <Box sx={{ bgcolor: 'bg.dark' }}>
       <Container sx={{maxWidth:'xl', py: 8 }}>
         <Typography color='text.primary'>
-        What I am doing,
-        my goals
-
-        my system
-        what i like
+           footer 
         </Typography>
-        </Container>
-      </Box>
+      </Container>
+    </Box>
   )
 }
