@@ -36,81 +36,91 @@ export default function ItemCard(props) {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        maxHeight: 600,
-        maxWidth: 260,
+        height: 500,
+        width: 300,
         border: 1,
-        m: '0.5rem',
+        /* m: '0.5rem', */
         backgroundColor: 'bg.light',
         borderColor: 'primary.main',
         borderRadius: '10px',
       }}
     >
-      {props.item.img ? (
-        <CardMedia
-          component='img'
-          height='150'
-          image={props.item.img}
-          alt='img'
-        />
-      ) : (
-        <></>
-      )}
-      <CardContent>
-        <Typography
-          gutterBottom
-          variant='h5'
-          component='div'
-          color='text.secondary'
-        >
-          {props.item.title}
-        </Typography>
-        <Typography variant='body2' color='text.secondary'>
-          {props.item.desc}
-        </Typography>
-        <Box sx={{ display: 'inline-flex' }}>
+      <Box>
+        {props.item.img ? (
+          <CardMedia
+            component='img'
+            height='150'
+            image={props.item.img}
+            alt='img'
+          />
+        ) : (
+          <></>
+        )}
+        <CardContent>
           <Typography
-            sx={{ mr: 1 }}
-            fontWeight='600'
-            variant='body2'
+            gutterBottom
+            variant='h5'
+            component='div'
             color='text.secondary'
           >
-            Status:
+            {props.item.title}
           </Typography>
           <Typography variant='body2' color='text.secondary'>
-            {props.item.status}
+            {props.item.desc}
           </Typography>
-        </Box>
-        <br />
-        <Box sx={{ display: 'inline-flex' }}>
-          <Typography
-            sx={{ mr: 1 }}
-            fontWeight='600'
-            variant='body2'
-            color='text.secondary'
-          >
-            Date:
-          </Typography>
-          <Typography variant='body2' color='text.secondary'>
-            {' '}
-            {props.item.status === 'Development' || props.item.status === 'Busy'
-              ? 'est. ' + props.item.date
-              : props.item.date}
-          </Typography>
-        </Box>
-        <Box>
-          <Typography fontWeight='600' variant='body2' color='text.secondary'>
-            Tags:
-          </Typography>
-          {props.item.tags.map((t) => Tag({ tag: t }))}
-        </Box>
-      </CardContent>
+          <Box sx={{ display: 'inline-flex' }}>
+            <Typography
+              sx={{ mr: 1 }}
+              fontWeight='600'
+              variant='body2'
+              color='text.secondary'
+            >
+              Status:
+            </Typography>
+            <Typography variant='body2' color='text.secondary'>
+              {props.item.status}
+            </Typography>
+          </Box>
+          <br />
+          <Box sx={{ display: 'inline-flex' }}>
+            <Typography
+              sx={{ mr: 1 }}
+              fontWeight='600'
+              variant='body2'
+              color='text.secondary'
+            >
+              Date:
+            </Typography>
+            <Typography variant='body2' color='text.secondary'>
+              {' '}
+              {props.item.status === 'Development' ||
+              props.item.status === 'Busy'
+                ? 'est. ' + props.item.date
+                : props.item.date}
+            </Typography>
+          </Box>
+          <Box>
+            <Typography fontWeight='600' variant='body2' color='text.secondary'>
+              Tags:
+            </Typography>
+            {props.item.tags.map((t) => Tag({ tag: t }))}
+          </Box>
+        </CardContent>
+      </Box>
       <CardActions
         sx={{
           display: 'flex',
           justifyContent: 'space-between',
         }}
       >
-        <Button size='small'> Learn More</Button>
+        {/*Learn More*/}
+        {props.item.long_desc === '' ? (
+          <Button disabled={true} size='small'></Button> // keep the spacing
+        ) : (
+          <Button size='small'> Learn More</Button>
+        )}
+
+        {/*Git Icon*/}
         {props.item.git === '' ? (
           <React.Fragment></React.Fragment>
         ) : (
