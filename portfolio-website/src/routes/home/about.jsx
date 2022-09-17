@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography'
 export default function About() {
   return (
       <Box sx={{ bgcolor: 'bg.primary' }}>
-      <Container sx={{maxWidth:'xl', py: 8 }}>
+      <Container id='about' sx={{maxWidth:'xl', py: 8 }}>
         <Typography color='text.primary'>
         What I am doing,
         my goals

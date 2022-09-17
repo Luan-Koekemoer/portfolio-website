@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 //MaterialUI
 import AppBar from '@mui/material/AppBar'
@@ -15,7 +14,8 @@ import Menu from '@mui/material/Menu'
 import MenuIcon from '@mui/icons-material/Menu'
 import MenuItem from '@mui/material/MenuItem'
 
-import { StyledNavButton } from './custom_mui'
+import { StyledNavHashLink as Link } from './custom_mui.jsx'
+import { StyledNavTypography } from './custom_mui'
 import '../styles/navbar.css'
 
 interface Props {
@@ -42,11 +42,12 @@ function HideOnScroll(props: Props) {
     </Slide>
   )
 }
-
 export default function NavBar(props: Props) {
   const pages = [
-    { name: 'Home', link: '/' },
-    // { name: 'About', link: '/about' },
+    { name: 'Home', link: '/#home' },
+    { name: 'Projects', link: '/#proj' },
+    { name: 'Education', link: '/#edu' },
+    { name: 'About', link: '/#about' },
   ]
 
   const [anchorElNav, setAnchorElNav] = React.useState(null)
@@ -58,6 +59,13 @@ export default function NavBar(props: Props) {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null)
   }
+  /* <StyledNavButton */
+  /*   key={page.name} */
+  /*   onClick={handleCloseNavMenu} */
+  /*   href={page.link} */
+  /* > */
+  /*   {page.name} */
+  /* </StyledNavButton> */
 
   return (
     <React.Fragment>
@@ -83,7 +91,6 @@ export default function NavBar(props: Props) {
               >
                 Luan Koekemoer
               </Typography>
-
               <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                 <IconButton
                   size='large'
@@ -115,11 +122,11 @@ export default function NavBar(props: Props) {
                 >
                   {pages.map((page) => (
                     <MenuItem key={page.name} onClick={handleCloseNavMenu}>
-                      <Typography textAlign='center'>
-                        <Link to={page.link} className='text-link'>
+                      <StyledNavTypography textAlign='center'>
+                        <Link smooth to={page.link} className='text-link'>
                           {page.name}
                         </Link>
-                      </Typography>
+                      </StyledNavTypography>
                     </MenuItem>
                   ))}
                 </Menu>
@@ -162,13 +169,11 @@ export default function NavBar(props: Props) {
                 }}
               >
                 {pages.map((page) => (
-                  <StyledNavButton
-                    key={page.name}
-                    onClick={handleCloseNavMenu}
-                    href={page.link}
-                  >
-                    {page.name}
-                  </StyledNavButton>
+                  <Box key={page.name} sx={{ mx: 1 }}>
+                    <Link to={page.link} smooth>
+                      {page.name}
+                    </Link>
+                  </Box>
                 ))}
               </Box>
             </Toolbar>

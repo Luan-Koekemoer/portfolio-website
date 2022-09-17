@@ -13,7 +13,7 @@ export default function Home() {
       <Projects />
       <Certs />
       <About />
-      <Footer/>
+      <Footer />
     </React.Fragment>
   )
 }

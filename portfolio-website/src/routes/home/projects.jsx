@@ -101,6 +101,7 @@ export default function Projects(props) {
   return (
     <Box bgcolor='bg.light'>
       <Container
+        id='proj'
         sx={{
           justifyContent: 'center',
           display: 'inline-flex',
