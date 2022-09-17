@@ -48,6 +48,8 @@ export default function NavBar(props: Props) {
     { name: 'Projects', link: '/#proj' },
     { name: 'Education', link: '/#edu' },
     { name: 'About', link: '/#about' },
+    { name: 'More on Projects', link: '/more/projects/' },
+    { name: 'More on Education', link: '/more/education/' },
   ]
 
   const [anchorElNav, setAnchorElNav] = React.useState(null)

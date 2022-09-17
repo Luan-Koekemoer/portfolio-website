@@ -39,7 +39,7 @@ export default function ItemCard(props) {
         height: 500,
         width: 300,
         border: 1,
-        /* m: '0.5rem', */
+        m: '0.5rem',
         backgroundColor: 'bg.light',
         borderColor: 'primary.main',
         borderRadius: '10px',
@@ -107,38 +107,42 @@ export default function ItemCard(props) {
           </Box>
         </CardContent>
       </Box>
-      <CardActions
-        sx={{
-          display: 'flex',
-          justifyContent: 'space-between',
-        }}
-      >
-        {/*Learn More*/}
-        {props.item.long_desc === '' ? (
-          <Button disabled={true} size='small'></Button> // keep the spacing
-        ) : (
-          <Button size='small'> Learn More</Button>
-        )}
+      <Box>
+        <CardActions
+          sx={{
+            display: 'flex',
+            justifyContent: 'space-between',
+          }}
+        >
+          {/*Learn More*/}
+          {props.item.long_desc === '' ? (
+            <Button disabled={true} size='small'></Button> // keep the spacing
+          ) : (
+            <Button size='small' href={props.item.long_desc}>
+              Learn More
+            </Button>
+          )}
 
-        {/*Git Icon*/}
-        {props.item.git === '' ? (
-          <React.Fragment></React.Fragment>
-        ) : (
-          <Button
-            component='a'
-            href={props.item.git}
-            target='_blank'
-            size='small'
-          >
-            <img
-              height='30rem'
-              width='30rem'
-              src='/images/git.png'
-              alt='github logo'
-            />
-          </Button>
-        )}
-      </CardActions>
+          {/*Git Icon*/}
+          {props.item.git === '' ? (
+            <React.Fragment></React.Fragment>
+          ) : (
+            <Button
+              component='a'
+              href={props.item.git}
+              target='_blank'
+              size='small'
+            >
+              <img
+                height='30rem'
+                width='30rem'
+                src='/images/git.png'
+                alt='github logo'
+              />
+            </Button>
+          )}
+        </CardActions>
+      </Box>
     </Card>
   )
 }

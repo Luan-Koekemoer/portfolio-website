@@ -8,8 +8,7 @@ const projects = [
     id: '1a',
     title: 'Self hosted VPN',
     desc: 'I am self hosting a VPN server using OpenVPN. I learned a lot of the techinical aspects regarding setting up servers and maintaining them.',
-    long_desc:
-      'VPNs have many use cases but I personally started using mine for tunneled p2p connections with friends computers and better internet stability when gaming on European servers.',
+    long_desc: '/more/projects/#vpn',
     img: '/images/cloud.jpg',
     tags: ['Linux', 'OpenVPN', 'SSH', 'Cloud'],
     status: 'Production',
@@ -31,8 +30,7 @@ const projects = [
     id: '3a',
     title: 'GP Model',
     desc: 'This is a Genetic Programming model using Grammatical Evolution I wrote from scratch.',
-    long_desc:
-      'I did a course in the first semester of 2022, as part of my degree, where I learned about how to write Genetic Programming models from scratch...',
+    long_desc: '',
     img: '/images/ml.jpg',
     tags: ['GP', 'Machine Learning', 'Trees', 'Regression'],
     status: 'On Hold',
@@ -67,7 +65,7 @@ const projects = [
     desc: 'This website you are viewing. I am also running my own email service on this server.',
     long_desc: '',
     img: '/images/cloud.jpg',
-    tags: ['Websites', 'SMTP','SSL', 'Nginx', 'Cloud', 'Dev ops', 'Linux'],
+    tags: ['Websites', 'SMTP', 'SSL', 'Nginx', 'Cloud', 'Dev ops', 'Linux'],
     status: 'Production',
     date: 'August 2022',
     git: '',
@@ -110,7 +108,9 @@ export default function Projects(props) {
           py: 8,
         }}
       >
-        <Typography color='text.secondary' variant='h3'>Personal Projects</Typography>
+        <Typography color='text.secondary' variant='h3'>
+          Personal Projects
+        </Typography>
       </Container>
       <CardContainer col='bg.light' items={projects} />
     </Box>

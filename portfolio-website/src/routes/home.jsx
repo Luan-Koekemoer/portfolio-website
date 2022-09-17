@@ -4,7 +4,6 @@ import Intro from './home/intro'
 import Projects from './home/projects.jsx'
 import Certs from './home/certs.jsx'
 import About from './home/about.jsx'
-import Footer from '../components/footer.jsx'
 // import CssBaseline from '@mui/material/CssBaseline'
 export default function Home() {
   return (
@@ -13,7 +12,6 @@ export default function Home() {
       <Projects />
       <Certs />
       <About />
-      <Footer />
     </React.Fragment>
   )
 }
