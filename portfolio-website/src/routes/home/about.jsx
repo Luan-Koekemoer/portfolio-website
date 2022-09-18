@@ -10,6 +10,72 @@ export default function About() {
         <Typography sx={{ pb: 2 }} variant='h4' color='text.primary'>
           About
         </Typography>
+        <Typography
+          sx={{ pt: 2 }}
+          variant='h5'
+          fontWeight='600'
+          color='text.primary'
+        >
+          Technologies
+        </Typography>
+        <br />
+        <Box sx={{ display: 'flex' , flexWrap:'wrap',justifyContent: 'space-evenly' }}>
+          <Box>
+            <Typography color='text.focus' fontSize='1.2em' fontWeight='600'>
+              Programming
+            </Typography>
+            <Box sx={{ display: 'flex', justifyContent: 'space-evenly' }}>
+              <Box sx={{pr: 2, pb: 2}}>
+                C# <br />
+                C++ <br />
+                Python <br />
+                Java <br />
+                JavaScript <br />
+              </Box>
+              <Box>
+                Rust <br />
+                SQL <br />
+                Dart <br />
+                HTML & CSS <br />
+                Lua
+              </Box>
+            </Box>
+          </Box>
+          <Box>
+            <Typography color='text.focus' fontSize='1.2em' fontWeight='600'>
+              Frameworks
+            </Typography>
+            <Box sx={{ display: 'flex', justifyContent: 'space-evenly' }}>
+              <Box sx={{ pr: 5 }}>
+                Tensorflow <br /> 
+                React
+                <br /> ASP.Net
+                <br /> Flutter
+              </Box>
+            </Box>
+          </Box>
+          <Box>
+            <Typography color='text.focus' fontSize='1.2em' fontWeight='600'>
+              Devops
+            </Typography>
+            <Box sx={{ display: 'flex', justifyContent: 'space-evenly' }}>
+              <Box sx={{ pr: 5 }}>
+                Git <br />
+                Linux <br />
+                Networking <br />
+                MySQL <br />
+                graphQL <br />
+              </Box>
+              <Box>
+                Servers
+                <br />
+                Cyber Security
+                <br />
+                MongoDB <br />
+              </Box>
+            </Box>
+          </Box>
+        </Box>
         <Typography variant='h6' fontWeight='600' color='text.primary'>
           What I am doing
         </Typography>
@@ -18,11 +84,11 @@ export default function About() {
           can probably tell I like to do a lot of things. I am doing a bit of
           everything! The thing is IT is such a diverse field and it has so many
           interesting things it has to offer it itches me to find out about
-          somethign and not learn what it is about. I really like to explore all
-          the topics, however recenlty I have come to realise I have to narrow
+          something and not learn what it is about. I really like to explore all
+          the topics, however recently I have come to realise I have to narrow
           down my interest on something sooner or later. Ever since I started
-          dappeling in the field of AI by virtue of the work I'm doing for my
-          honours degree and for curiousity's sake. I have a sense that I would
+          exploring in the field of AI by virtue of the work I'm doing for my
+          honours degree and for curiosity's sake. I have a sense that I would
           like to focus more in Data Science and other related topics.
         </Typography>
         <Typography
@@ -34,13 +100,13 @@ export default function About() {
           Current Plans
         </Typography>
         <Typography color='text.primary'>
-          The current plan is to finish most of the projects I have, or atleats
-          get it in a somewhat retireable state. Compelete the active
+          The current plan is to finish most of the projects I have, or at least
+          get it in a somewhat retirable State. Complete the active
           certifications and degrees then I will probably start practicing on
-          random data sets I can find on websites like Kaggle for isntance. The
+          random data sets I can find on websites like Kaggle for instance. The
           thing is I have a lot of ideas, however with all the things going on
-          sacrifice is sometimes necesarry. As I am still a student the ideal
-          goal would be to be employed as a DataScienctist to start off my
+          sacrifice is sometimes necessary. As I am still a student the ideal
+          goal would be to be employed as a Data Scientist to start off my
           career.
         </Typography>
         <Typography
@@ -54,15 +120,15 @@ export default function About() {
         <Typography color='text.primary'>
           I am on Arch Linux and I have been using Linux as my main OS for the
           last two years. I just think having a fully customizable system is fun
-          tayloring somethign exactly to my needs.
-          <ul>
-            <li>OS: Arch Linux</li>
-            <li>WM: AwesomeWM</li>
-            <li>IDE/Text Editor: NeoVim</li>
-          </ul>
-          More information of my system can be found in my{' '}
+          tailoring something exactly to my needs. More information of my system
+          can be found in my{' '}
           <a href='https://github.com/Luan-Koekemoer/dotfiles'>Dotfiles</a>
         </Typography>
+        <ul>
+          <li>OS: Arch Linux</li>
+          <li>WM: AwesomeWM</li>
+          <li>IDE/Text Editor: NeoVim</li>
+        </ul>
       </Container>
     </Box>
   )

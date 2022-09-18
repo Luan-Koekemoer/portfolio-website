@@ -7,7 +7,7 @@ const projects = [
   {
     id: '1a',
     title: 'Self hosted VPN',
-    desc: 'I am self hosting a VPN server using OpenVPN. I learned a lot of the techinical aspects regarding setting up servers and maintaining them.',
+    desc: 'I am self hosting a VPN server using OpenVPN. I learned a lot of the technical aspects regarding setting up servers and maintaining them.',
     long_desc: '/more/projects/#vpn',
     img: '/images/cloud.jpg',
     tags: ['Linux', 'OpenVPN', 'SSH', 'Cloud'],
@@ -43,7 +43,7 @@ const projects = [
     desc: 'This model implements the core structure of models using hyper heuristics. This is part of a Machine Learning research topic that aims the automation of solving problems.',
     long_desc: '',
     img: '/images/ml.jpg',
-    tags: ['GP', 'Heuristics', 'Machine Learning', 'Combintorial Problems'],
+    tags: ['GP', 'Heuristics', 'Machine Learning', 'Combinatorial Problems'],
     status: 'Development',
     date: 'November 2022',
     git: 'https://github.com/Luan-Koekemoer/hyper-heuristsics',
