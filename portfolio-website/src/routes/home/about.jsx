@@ -19,13 +19,20 @@ export default function About() {
           Technologies
         </Typography>
         <br />
-        <Box sx={{ display: 'flex' , flexWrap:'wrap',justifyContent: 'space-evenly' }}>
+        <Box
+          sx={{
+            pb: 5,
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'space-evenly',
+          }}
+        >
           <Box>
             <Typography color='text.focus' fontSize='1.2em' fontWeight='600'>
               Programming
             </Typography>
             <Box sx={{ display: 'flex', justifyContent: 'space-evenly' }}>
-              <Box sx={{pr: 2, pb: 2}}>
+              <Box sx={{ pr: 2, pb: 2 }}>
                 C# <br />
                 C++ <br />
                 Python <br />
@@ -47,7 +54,7 @@ export default function About() {
             </Typography>
             <Box sx={{ display: 'flex', justifyContent: 'space-evenly' }}>
               <Box sx={{ pr: 5 }}>
-                Tensorflow <br /> 
+                Tensorflow <br />
                 React
                 <br /> ASP.Net
                 <br /> Flutter
@@ -67,11 +74,13 @@ export default function About() {
                 graphQL <br />
               </Box>
               <Box>
+                Spin (Model Checking) <br />
                 Servers
                 <br />
                 Cyber Security
                 <br />
                 MongoDB <br />
+                <br />
               </Box>
             </Box>
           </Box>
@@ -89,7 +98,8 @@ export default function About() {
           down my interest on something sooner or later. Ever since I started
           exploring in the field of AI by virtue of the work I'm doing for my
           honours degree and for curiosity's sake. I have a sense that I would
-          like to focus more in Data Science and other related topics.
+          like to focus more in AI Engineer/ Data Scientist and other related
+          topics.
         </Typography>
         <Typography
           sx={{ pt: 2 }}
@@ -119,10 +129,16 @@ export default function About() {
         </Typography>
         <Typography color='text.primary'>
           I am on Arch Linux and I have been using Linux as my main OS for the
-          last two years. I just think having a fully customizable system is fun
-          tailoring something exactly to my needs. More information of my system
-          can be found in my{' '}
-          <a href='https://github.com/Luan-Koekemoer/dotfiles'>Dotfiles</a>
+          last two years. I just think having a fully customizable system is
+          fun, where I can tailor something exactly to my liking. More
+          information of my system can be found in my{' '}
+          <a
+            href='https://github.com/Luan-Koekemoer/dotfiles'
+            target='blank'
+            className='lightlink'
+          >
+            Dotfiles
+          </a>
         </Typography>
         <ul>
           <li>OS: Arch Linux</li>

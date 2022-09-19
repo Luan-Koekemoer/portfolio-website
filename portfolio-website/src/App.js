@@ -1,6 +1,6 @@
 import React from 'react'
 import Home from './routes/home'
-import LearnMore from './routes/learnmore'
+import LearnMore from './routes/learnmoreproj'
 import LearnMoreCert from './routes/learnmorecert'
 import NavBar from './components/navbar'
 import Footer from './components/footer.jsx'

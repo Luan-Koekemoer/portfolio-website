@@ -3,12 +3,13 @@ import { HashLink } from 'react-router-hash-link'
 import { styled } from '@mui/material/styles'
 import { theme } from '../Theme'
 
-export const StyledNavButton = styled(Button, { theme })({
+export const StyledButton = styled(Button, { theme })({
   color: theme.palette.text.primary,
-  backgroundColor: theme.palette.primary.main,
+  backgroundColor: theme.palette.bg.light,
   '&:hover': {
     fontWeight: 'bold',
     color: theme.palette.text.focus,
+    backgroundColor: theme.palette.bg.dark,
   },
 })
 

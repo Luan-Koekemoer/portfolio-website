@@ -63,7 +63,7 @@ const projects = [
     id: '6a',
     title: 'Self Hosted Website and Email Service ',
     desc: 'This website you are viewing. I am also running my own email service on this server.',
-    long_desc: '',
+    long_desc: '/more/projects/#web',
     img: '/images/cloud.jpg',
     tags: ['Websites', 'SMTP', 'SSL', 'Nginx', 'Cloud', 'Dev ops', 'Linux'],
     status: 'Production',

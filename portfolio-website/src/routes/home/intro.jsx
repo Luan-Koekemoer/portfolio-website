@@ -48,11 +48,7 @@ export default function Intro(Props: props) {
           <br />
         </Box>
         <Box>
-          <img
-            src='/images/me.png'
-            width='100%'
-            alt='self portrait'
-          />
+          <img src='/images/me.png' width='100%' alt='self portrait' />
           <Typography color='text.primary' fontSize='1.0em'>
             Email: luan@luank.xyz
           </Typography>
@@ -61,7 +57,7 @@ export default function Intro(Props: props) {
               GitHub:
             </Typography>
             <a href='https://github.com/Luan-Koekemoer' target='blank'>
-              <img src='/images/git.png' width='26' height='26' alt='git' />
+              <img src='/images/gitw.png' width='26' height='26' alt='git' />
             </a>
           </Box>
         </Box>

@@ -13,7 +13,7 @@ export default function Footer(Props: props) {
           <Typography color='text.primary'>
             <a href='https://github.com/Luan-Koekemoer' target='blank'>
               <img
-                src='/images/git.png'
+                src='/images/gitw.png'
                 height='25'
                 width='25'
                 alt='git'

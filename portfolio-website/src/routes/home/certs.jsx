@@ -19,7 +19,7 @@ const certs = [
     id: '2c',
     title: 'BSc Honours Computer Science',
     desc: 'Degree at the University of Pretoria',
-    long_desc: '',
+    long_desc: '/more/education/#deg2',
     img: '/images/up.jpg',
     tags: ['Degree'],
     status: 'Busy',
