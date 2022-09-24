@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
-import { StyledNavHashLink as Link , StyledButton} from './custom_mui.jsx'
+import { StyledNavHashLink as Link, StyledHoverBox } from './custom_mui.jsx'
 
 function Tag({ tag }) {
   return (
@@ -119,9 +119,15 @@ export default function ItemCard(props) {
           {props.item.long_desc === '' ? (
             <Button disabled={true} size='small'></Button> // keep the spacing
           ) : (
-            <StyledButton size='small' >
-                <Link to={props.item.long_desc} smooth sx={{color:'text.secondary' }}>Learn More</Link>
-            </StyledButton>
+            <StyledHoverBox  sx={{ p: 0.5 }}>
+              <Link
+                to={props.item.long_desc}
+                smooth
+                sx={{ color: 'text.secondary' , p:1}}
+              >
+                Learn More
+              </Link>
+            </StyledHoverBox>
           )}
 
           {/*Git Icon*/}

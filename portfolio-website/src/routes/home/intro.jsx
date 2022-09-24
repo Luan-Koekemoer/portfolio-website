@@ -1,11 +1,19 @@
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
-
+//{
 export default function Intro(Props: props) {
   return (
     <Box sx={{ bgcolor: 'bg.primary' }}>
-      <Container id='home' sx={{ display: 'flex', maxWidth: 'xl', py: 8 }}>
+      <Container
+        id='home'
+        sx={{
+          flexWrap: { xs: 'wrap', md: 'nowrap' },
+          display: 'flex',
+          maxWidth: 'xl',
+          py: 8,
+        }}
+      >
         <Box>
           <Typography sx={{ pb: 2 }} variant='h2' color='text.primary'>
             Welcome to my Website
