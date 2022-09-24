@@ -37,17 +37,17 @@ const projects = [
     date: 'August 2022',
     git: 'https://github.com/Luan-Koekemoer/GP-GrammaticalEvolution',
   },
-  {
-    id: '4a',
-    title: 'Hyper Heuristics Model',
-    desc: 'This model implements the core structure of models using hyper heuristics. This is part of a Machine Learning research topic that aims the automation of solving problems.',
-    long_desc: '',
-    img: '/images/ml.jpg',
-    tags: ['GP', 'Heuristics', 'Machine Learning', 'Combinatorial Problems'],
-    status: 'Development',
-    date: 'November 2022',
-    git: 'https://github.com/Luan-Koekemoer/hyper-heuristsics',
-  },
+  /* { */
+  /*   id: '4a', */
+  /*   title: 'Hyper Heuristics Model', */
+  /*   desc: 'This model implements the core structure of models using hyper heuristics. This is part of a Machine Learning research topic that aims the automation of solving problems.', */
+  /*   long_desc: '', */
+  /*   img: '/images/ml.jpg', */
+  /*   tags: ['GP', 'Heuristics', 'Machine Learning', 'Combinatorial Problems'], */
+  /*   status: 'Development', */
+  /*   date: 'November 2022', */
+  /*   git: 'https://github.com/Luan-Koekemoer/hyper-heuristsics', */
+  /* }, */
   {
     id: '5a',
     title: 'Word Embeddings with Hebbian Learning',

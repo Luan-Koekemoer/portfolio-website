@@ -84,14 +84,12 @@ export function VPN(props) {
         >
           Tech Stack
         </Typography>
-        <Typography color='text.primary'>
-          <ul>
-            <li>OpenVPN</li>
-            <li>Debbian Server</li>
-            <li>Linode</li>
-            <li>SSH</li>
-          </ul>
-        </Typography>
+        <ul>
+          <li>OpenVPN</li>
+          <li>Debbian Server</li>
+          <li>Linode</li>
+          <li>SSH</li>
+        </ul>
       </Container>
     </Box>
   )
@@ -147,16 +145,13 @@ export function Web(props) {
         <Typography sx={{ pt: 2 }} variant='h6' fontWeight='600'>
           Tech Stack
         </Typography>
-        <Typography>
-          <ul>
-            <li>Ngnix</li>
-            <li>React</li>
-            <li>Linode + Debbian</li>
-            <li>Certbot</li>
-          </ul>
-        </Typography>
+        <ul>
+          <li>Ngnix</li>
+          <li>React</li>
+          <li>Linode + Debbian</li>
+          <li>Certbot</li>
+        </ul>
       </Container>
     </Box>
   )
 }
-
