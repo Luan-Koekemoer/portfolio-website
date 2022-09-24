@@ -86,20 +86,25 @@ export default function About() {
           </Box>
         </Box>
         <Typography variant='h6' fontWeight='600' color='text.primary'>
-          What I am doing
+          I love what I do
         </Typography>
         <Typography color='text.primary'>
-          Judging by the diverse selection of projects I have worked with you
-          can probably tell I like to do a lot of things. I am doing a bit of
-          everything! The thing is IT is such a diverse field and it has so many
-          interesting things it has to offer it itches me to find out about
-          something and not learn what it is about. I really like to explore all
-          the topics, however recently I have come to realise I have to narrow
-          down my interest on something sooner or later. Ever since I started
-          exploring in the field of AI by virtue of the work I'm doing for my
-          honours degree and for curiosity's sake. I have a sense that I would
-          like to focus more in AI Engineer/ Data Scientist and other related
-          topics.
+          Challenges and problem solving is what I live for. I enjoy spending my
+          time tweaking my work environment, experimenting with systems, and to
+          an extent fixing my computers, be it hardware or software related. I
+          always try to help others when they face technical problems because I
+          always see it as an opportunity where I can learn something new.
+          <br />
+          <br />
+          Judging by the diverse selection of projects I have worked on you can
+          probably tell I like to do a lot of things. IT is such a diverse field
+          and offers so many interesting things. When I find out about something
+          I haven't heard about it itches me to not learn what it is about.
+          "Another rabbit hole, surely it wouldn't take that long". However,
+          recently I have come to realise I have to narrow down my interest on
+          something sooner or later. I started exploring in the field of AI,
+          that is also mainly why I decided to do an honours degree, focusing my
+          studies around the AI related topics.
         </Typography>
         <Typography
           sx={{ pt: 2 }}
@@ -111,13 +116,12 @@ export default function About() {
         </Typography>
         <Typography color='text.primary'>
           The current plan is to finish most of the projects I have, or at least
-          get it in a somewhat retirable State. Complete the active
+          get it in a somewhat retirable state. Complete the active
           certifications and degrees then I will probably start practicing on
-          random data sets I can find on websites like Kaggle for instance. The
-          thing is I have a lot of ideas, however with all the things going on
-          sacrifice is sometimes necessary. As I am still a student the ideal
-          goal would be to be employed as a Data Scientist to start off my
-          career.
+          random data sets I can find on websites like Kaggle for instance. I
+          have a lot of ideas, however with all the things going on sacrifice is
+          sometimes necessary. As I am still a student the ideal goal would be
+          to be employed as a Data Scientist to start off my career.
         </Typography>
         <Typography
           sx={{ pt: 2 }}
@@ -129,7 +133,7 @@ export default function About() {
         </Typography>
         <Typography color='text.primary'>
           I am on Arch Linux and I have been using Linux as my main OS for the
-          last two years. I just think having a fully customizable system is
+          last {new Date().getFullYear()-2020} years. I just think having a fully customizable system is
           fun, where I can tailor something exactly to my liking. More
           information of my system can be found in my{' '}
           <a
