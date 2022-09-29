@@ -75,10 +75,9 @@ export default function About() {
               </Box>
               <Box>
                 Spin (Model Checking) <br />
-                Servers
-                <br />
-                Cyber Security
-                <br />
+                Docker <br/>
+                Servers <br />
+                Cyber Security <br />
                 MongoDB <br />
                 <br />
               </Box>
