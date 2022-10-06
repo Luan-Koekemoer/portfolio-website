@@ -27,9 +27,10 @@ export default function Intro(Props: props) {
           <Typography color='text.primary' fontSize='1.1em'>
             I've been programming for about 4 years now and it is safe to say I
             have explored about 90% of all the topics computer science has to
-            offer. I have to admit I don't know everything, but I have a decent
-            understanding of everything. I am definitely not afraid to explore
-            and learn about anything I haven't heard of.
+            offer. I am a flexible, hard working indiviudal that enjoys
+            challenges and to solve complex problems, the type of problems most
+            people are afraid to take on. Even if it is unfamaliar grounds I
+            will always be willing to learn about anything I haven't heard of.
           </Typography>
           <br />
           <Typography color='text.primary' fontSize='1.0em'>
@@ -39,19 +40,13 @@ export default function Intro(Props: props) {
             few years I have just been jumping from one rabbit hole to the next.
           </Typography>
           <br />
-          <Typography color='text.primary' fontSize='1.2em'>
-            I finally think I've come to a decision that I want to become an
-            <span style={{ fontWeight: '700', color: 'text.focus' }}>
-              {' '}
-              AI Engineer.
-            </span>
-          </Typography>
           <br />
           <Typography color='text.primary' fontSize='1.0em'>
-            The skill set required for AI Engineering is just so big, since
-            machine learning can be applied to almost everything. It really
-            keeps me going, the problem solving aspect, different deployment
-            techniques and data science.
+            I have a great interest in systems engineering, automation tasks,
+            machine learning, embedded systems, and just engineering in general.
+            I also enjoy creating architectures as I believe I have very good
+            insight when it comes to analysis and planning as I generally come
+            up with preamtive solutions before the problems are encountered.
           </Typography>
           <br />
         </Box>

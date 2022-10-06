@@ -75,7 +75,7 @@ export default function About() {
               </Box>
               <Box>
                 Spin (Model Checking) <br />
-                Docker <br/>
+                Docker <br />
                 Servers <br />
                 Cyber Security <br />
                 MongoDB <br />
@@ -101,9 +101,7 @@ export default function About() {
           I haven't heard about it itches me to not learn what it is about.
           "Another rabbit hole, surely it wouldn't take that long". However,
           recently I have come to realise I have to narrow down my interest on
-          something sooner or later. I started exploring in the field of AI,
-          that is also mainly why I decided to do an honours degree, focusing my
-          studies around the AI related topics.
+          something sooner or later.
         </Typography>
         <Typography
           sx={{ pt: 2 }}
@@ -116,11 +114,11 @@ export default function About() {
         <Typography color='text.primary'>
           The current plan is to finish most of the projects I have, or at least
           get it in a somewhat retirable state. Complete the active
-          certifications and degrees then I will probably start practicing on
-          random data sets I can find on websites like Kaggle for instance. I
-          have a lot of ideas, however with all the things going on sacrifice is
-          sometimes necessary. As I am still a student the ideal goal would be
-          to be employed as a Data Scientist to start off my career.
+          certifications and degrees. I would have a few ideas for more projects
+          such as machine learning related I am going to get random data sets I
+          can find on websites like Kaggle and practice on that. Or see if I
+          canimplement some practical automation in my day-to-day life. The
+          ideas are endless.
         </Typography>
         <Typography
           sx={{ pt: 2 }}
@@ -132,9 +130,9 @@ export default function About() {
         </Typography>
         <Typography color='text.primary'>
           I am on Arch Linux and I have been using Linux as my main OS for the
-          last {new Date().getFullYear()-2020} years. I just think having a fully customizable system is
-          fun, where I can tailor something exactly to my liking. More
-          information of my system can be found in my{' '}
+          last {new Date().getFullYear() - 2020} years. I just think having a
+          fully customizable system is fun, where I can tailor something exactly
+          to my liking. More information of my system can be found in my{' '}
           <a
             href='https://github.com/Luan-Koekemoer/dotfiles'
             target='blank'
