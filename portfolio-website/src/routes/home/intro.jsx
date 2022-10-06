@@ -40,7 +40,6 @@ export default function Intro(Props: props) {
             few years I have just been jumping from one rabbit hole to the next.
           </Typography>
           <br />
-          <br />
           <Typography color='text.primary' fontSize='1.0em'>
             I have a great interest in systems engineering, automation tasks,
             machine learning, embedded systems, and just engineering in general.

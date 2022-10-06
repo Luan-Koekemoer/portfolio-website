@@ -72,6 +72,7 @@ export default function About() {
                 Networking <br />
                 MySQL <br />
                 graphQL <br />
+                Weka
               </Box>
               <Box>
                 Spin (Model Checking) <br />
