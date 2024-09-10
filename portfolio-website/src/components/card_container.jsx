@@ -9,7 +9,7 @@ import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
 
 // import required modules
-import { FreeMode, Pagination } from 'swiper'
+import { FreeMode, Pagination } from 'swiper/modules'
 
 export default function CardContainer(props) {
   function swiper(size) {
