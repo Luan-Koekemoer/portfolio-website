@@ -21,7 +21,7 @@ export function VPN(props) {
           <img src='/images/deb.png' width='150' height='150' alt='deb' />
         </Box>
         <Typography variant='h6' fontWeight='600' color='text.primary'>
-          Why did I do it?
+          What is it for?
         </Typography>
         <Typography color='text.primary'>
           As you probably know there are a lot of VPN services. Mainly due to
@@ -117,11 +117,11 @@ export function Web(props) {
           <img src='/images/react.png' width='150' height='150' alt='deb' />
         </Box>
         <Typography variant='h6' fontWeight='600'>
-          Why did I do it?
+          What is it for?
         </Typography>
         <Typography>
           I've always wanted to host my own website so the decision was rather
-          easy. I just liked the idea that I can write up my own website and
+          easy. I just liked the idea that I can write up my own website and cloud storage and
           have full control on exactly how it is presented and works. It is also
           highly extensible which is always nice if you want to add new sub
           websites etc. any constraints.

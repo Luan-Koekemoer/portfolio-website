@@ -47,7 +47,7 @@ export default function NavBar(props: Props) {
     { name: 'Home', link: '/#home' },
     { name: 'Projects', link: '/#proj' },
     { name: 'Education', link: '/#edu' },
-    { name: 'About', link: '/#about' },
+    { name: 'Skills', link: '/#about' },
     { name: 'More on Projects', link: '/more/projects/' },
     { name: 'More on Education', link: '/more/education/' },
   ]

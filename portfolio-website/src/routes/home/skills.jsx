@@ -3,12 +3,12 @@ import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 
-export default function About() {
+export default function Skills() {
   return (
     <Box sx={{ bgcolor: 'bg.primary' }}>
       <Container id='about' sx={{ maxWidth: 'xl', py: 8 }}>
         <Typography sx={{ pb: 2 }} variant='h4' color='text.primary'>
-          About
+          Skills
         </Typography>
         <Typography
           sx={{ pt: 2 }}
@@ -70,13 +70,15 @@ export default function About() {
                 Git <br />
                 Linux <br />
                 Networking <br />
+                Postgres <br />
+                Azure <br/>
                 MySQL <br />
-                graphQL <br />
                 Weka
               </Box>
               <Box>
                 Spin (Model Checking) <br />
                 Docker <br />
+                Jenkins <br />
                 Servers <br />
                 Cyber Security <br />
                 MongoDB <br />
@@ -100,27 +102,9 @@ export default function About() {
           probably tell I like to do a lot of things. IT is such a diverse field
           and offers so many interesting things. When I find out about something
           I haven't heard about it itches me to not learn what it is about.
-          "Another rabbit hole, surely it wouldn't take that long". However,
-          recently I have come to realise I have to narrow down my interest on
-          something sooner or later.
+          "Another rabbit hole, surely it wouldn't take that long". 
         </Typography>
-        <Typography
-          sx={{ pt: 2 }}
-          variant='h6'
-          fontWeight='600'
-          color='text.primary'
-        >
-          Current Plans
-        </Typography>
-        <Typography color='text.primary'>
-          The current plan is to finish most of the projects I have, or at least
-          get it in a somewhat retirable state. Complete the active
-          certifications and degrees. I would have a few ideas for more projects
-          such as machine learning related I am going to get random data sets I
-          can find on websites like Kaggle and practice on that. Or see if I
-          canimplement some practical automation in my day-to-day life. The
-          ideas are endless.
-        </Typography>
+
         <Typography
           sx={{ pt: 2 }}
           variant='h6'

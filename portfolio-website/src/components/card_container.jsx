@@ -23,12 +23,12 @@ export default function CardContainer(props) {
         }}
         modules={[FreeMode, Pagination]}
         className='mySwiper'
-      >
-        {props.items.map((i) => (
+      > 
+        {(props.items && props.items.length) ? props.items.map((i) => (
           <SwiperSlide key={i.id}>
             <ItemCard item={i} />
           </SwiperSlide>
-        ))}
+        )) : <SwiperSlide></SwiperSlide>} 
       </Swiper>
     )
   }

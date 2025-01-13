@@ -79,18 +79,16 @@ export function Deg2(props) {
         </Box>
         <Box sx={{ display: 'flex', justifyContent: 'space-evenly' }}></Box>
         <Typography variant='h6' fontWeight='600'>
-          Current Studies (2022, est December)
+          Current Studies (2022)
         </Typography>
         <Typography>
-          For my second degree I decided to narrow down my field of expertise
-          into AI, therefore I am doing my BSc Computer Science honours degree
+          I decided on my honours to broaden my interest and to learn in more depth what computer science has to offer. So I decided to do my BSc Computer Science honours degree
           at the University of Pretoria.
         </Typography>
         <br />
         <Typography fontWeight='bold'>Courses:</Typography>
         <Typography>
-          For my honours degree, I am doing it in one year. Thus I chose it to
-          be my full time occupation during the year of 2022.
+          For my honours degree, I did it in one year as full time during the year of 2022.
           <br />
           <br />
           That means I have a set of modules and a main research project I have
@@ -125,18 +123,18 @@ export function Deg2(props) {
         <br />
         <Typography fontWeight='bold'>Second Semester</Typography>
         <Typography>
-          For this semester (2022) I have the AI-2 course where I am learning
+          For this semester (2022) I had the AI-2 course where I am learned
           about neural networks. Everything about the theoretical aspect, such
           as the history, parameter turning and the different architectures.
-          However, we are also doing practical implementations for the
+          However, we are also did practical implementations for the
           assignments.
           <br />
           <br />
-          I have a Data Mining course. In this course we learn about the
+          I have a Data Mining course. In this course we learned about the
           CRISP-DM model, how to process, analyse and use data.
           <br />
           <br />
-          Then the last course I have is Hyper-Heuristics, which is a field
+          I also had a module that was about Hyper-Heuristics, which is a field
           where we study automation and optimization techniques for using and
           creating heuristics. These hyper-heuristics are used to solve for
           combinatorial problems. This is things such as warehouse management,
@@ -226,6 +224,54 @@ export function UdemyHack(props) {
         </Typography>
         <img src='/images/udemycyber.jpg' width='80%' alt='tensor cert' />
         <Typography color='text.primary'></Typography>
+      </Container>
+    </Box>
+  )
+}
+
+export function AzureAi900(props) {
+  return (
+    <Box sx={{ bgcolor: props.bg }}>
+      <Container
+        id='ai900'
+        sx={{ maxWidth: 'xl', py: 8, color: 'text.secondary' }}
+      >
+        <Typography sx={{ pb: 2 }} variant='h4'>
+          Azure AI-900: AI Fundementals
+        </Typography>
+        <Typography variant='h6' fontWeight='600'>
+          Qualification Obtained 2024
+        </Typography>
+        <Typography fontWeight='600'>
+          You can learn more about this course on the Microsoft website{' '}
+          <a
+            className='darklink'
+            href= 'https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals'
+            target='blank'
+          >
+            here
+          </a>
+          .
+        </Typography>
+        <Typography>
+          <a
+            className='darklink'
+            href='https://learn.microsoft.com/api/credentials/share/en-us/LuanKoekemoer-7565/B87B4641BB2C6D8B?sharingId=8CC0788711EBDD0'
+            target='blank'
+          >
+            Verify Certification
+          </a>
+        </Typography>
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'space-evenly',
+            flexWrap: 'wrap',
+          }}
+        >
+          <img src='/images/ai900full.png' width='80%' alt='up' />
+        </Box>
+        <Box sx={{ display: 'flex', justifyContent: 'space-evenly' }}></Box>
       </Container>
     </Box>
   )

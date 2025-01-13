@@ -1,7 +1,11 @@
 // fileName : server.js 
 // Example using the http module
 const express = require('express');
+const cors = require('cors')
+
 const app = express();
+
+app.use(cors())
 
 // Create an HTTP server
 app.get('/', (req, res) => {
@@ -10,10 +14,10 @@ app.get('/', (req, res) => {
 });
 
 // include routes
-const qualifications = require('./routes/qualifications');
+const cards = require('./routes/cards');
 
 // use routes
-app.use('/qualifications', qualifications);
+app.use('/cards', cards);
 
 // Specify the port to listen on
 const port = 3001;

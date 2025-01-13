@@ -2,7 +2,7 @@ import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 
-export default function Footer(Props: props) {
+export default function Footer(props) {
   return (
     <Box sx={{ bgcolor: 'bg.dark' }}>
       <Container sx={{ maxWidth: 'xl', py: 2 }}>
@@ -21,10 +21,20 @@ export default function Footer(Props: props) {
             </a>
           </Typography>
           <Typography color='text.primary'>
-            <span>&nbsp;&bull;</span> Email: luan@luank.xyz
+            <a href='https://www.linkedin.com/in/luan-koekemoer-51b818346/' target='blank'>
+              <img
+                src='/images/linkedin.png'
+                height='25'
+                width='25'
+                alt='git'
+              />
+            </a>
           </Typography>
           <Typography color='text.primary'>
-            <span>&nbsp;&bull;</span> 2022
+            <span>&nbsp;&bull;</span> Email: luankoeke@gmail.com
+          </Typography>
+          <Typography color='text.primary'>
+            <span>&nbsp;&bull;</span> {new Date().getFullYear()}
           </Typography>
         </Box>
       </Container>

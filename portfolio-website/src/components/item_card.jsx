@@ -30,6 +30,10 @@ function Tag({ tag }) {
   )
 }
 export default function ItemCard(props) {
+  if(!props.item) return <></>
+
+  props.item.date = new Date(props.item.date);
+
   return (
     <Card
       key={props.item.id}
@@ -96,15 +100,15 @@ export default function ItemCard(props) {
               {' '}
               {props.item.status === 'Development' ||
               props.item.status === 'Busy'
-                ? 'est. ' + props.item.date
-                : props.item.date}
+                ? 'est. ' + props.item.date.getFullYear() + ' ' + props.item.date.toLocaleString('default', { month: 'long' })
+                : props.item.date.getFullYear() + ' ' + props.item.date.toLocaleString('default', { month: 'long' })}
             </Typography>
           </Box>
           <Box>
             <Typography fontWeight='600' variant='body2' color='text.secondary'>
               Tags:
             </Typography>
-            {props.item.tags.map((t) => Tag({ tag: t }))}
+            {props.item.tags.split(',').map((t) => Tag({ tag: t }))}
           </Box>
         </CardContent>
       </Box>
@@ -116,7 +120,7 @@ export default function ItemCard(props) {
           }}
         >
           {/*Learn More*/}
-          {props.item.long_desc === '' ? (
+          {props.item.long_desc === '' || !props.item.long_desc ? (
             <Button disabled={true} size='small'></Button> // keep the spacing
           ) : (
             <StyledHoverBox  sx={{ p: 0.5 }}>
@@ -131,7 +135,7 @@ export default function ItemCard(props) {
           )}
 
           {/*Git Icon*/}
-          {props.item.git === '' ? (
+          {props.item.git === '' || !props.item.git ? (
             <React.Fragment></React.Fragment>
           ) : (
             <Button

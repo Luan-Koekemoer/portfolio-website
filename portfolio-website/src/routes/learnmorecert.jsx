@@ -1,5 +1,5 @@
 import React from 'react'
-import { Deg1, Deg2, Tensor, UdemyHack } from './learnmore/certs'
+import { Deg1, Deg2, Tensor, UdemyHack, AzureAi900 } from './learnmore/certs'
 
 export default function LearnMoreCert(props) {
   return (
@@ -8,6 +8,7 @@ export default function LearnMoreCert(props) {
       <Deg2 bg={'bg.light'} />
       <Tensor bg={'bg.dark'} />
       <UdemyHack bg={'bg.primary'} />
+      <AzureAi900 bg={'bg.light'} />
     </React.Fragment>
   )
 }
